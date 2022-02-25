@@ -1,0 +1,61 @@
+* {box-sizing: border-box;}
+body { color: #40407A; background-color:  #40407A;
+    font-family: Verdana, Arial, sans-serif; margin: 0;}
+header { background-color: #40407A; color:#FFFFFF; background-image: url(sunrise.jpg); background-size: 100% 100%;
+margin-top: 50px; font-size: 90%; min-height: 200px; text-align: center; }
+header a, :link, :visited {color:#FFFFFF;}
+header a, :hover {color: #8F92B2;}
+nav {text-align: right; background-color:#FFFFFF; padding-top: 0.5em; padding-bottom: 1em; padding-right:0;
+    padding-left: 1em; margin:0; position: fixed; top:0; left:0; z-index: 9999; width: 100%; height: auto;}
+nav a {text-decoration: none;}
+ul {margin: 0; padding-right: 2em; font-size: 1.2em;}
+nav li {display: inline; padding-left: 2em; width: 30%;}
+:link {color: #3F2860; text-decoration: none;}
+:visited {color: #497777; text-decoration: none;}
+:hover {color: #A26100; text-decoration: none;}
+footer {font-style: italic; text-align: center; font-size: 75%; clear: right;}
+li {font-size: 90%;}
+dd {font-size: 90%;}
+#wrapper {text-align: left; background-color: #F5F5F5; padding: 2em}
+.home {height: 20vh; padding-top: 2em; padding-left: 10%;}
+.content {height: 20vh; padding-top: 2em; padding-left: 10%; }
+#mathero {height: 300px; background-image: url(yogamat.jpg); background-size: 100% 100%; background-repeat: no-repeat;
+display: none; }
+#loungehero {height: 300px; background-image: url(yogalounge.jpg); background-size: 100% 100%; background-repeat: no-repeat;display: none;}
+h2 {margin: 0;}
+section {padding-left: 0.5em; padding-right: 0.5em;}
+#flow {display: block}
+
+table {border-color: #40407A; border-width: 1px; margin-bottom: 1em;
+   min-width: 400px; border-collapse: collapse; }
+td {padding: 0.5em; border-color: #40407A; border-width: 1px;}
+th {padding: 0.5em; border-color: #40407A; border-width: 1px;}
+:nth-of-type(even) { background-color: #D7E8E9; }
+table caption {margin: 1em; font-weight: bold; font-size: 120%; }
+
+form {display: flex; flex-flow: column nowrap;}
+input, datalist textarea {margin-bottom: 0.5em; }
+
+audio {margin-bottom: 1em;}
+
+@media screen and (min-width: 600px) {
+    nav ul {flex-wrap: nowrap; justify-content: flex-end;}
+    nav li {width: 7em}
+    section {padding-left: 2em; padding-right: 2em;}
+    #mathero {display: block; padding:1em; }
+    #loungehero {display: block; padding: 1em;}
+    #flow {flex-direction: row }
+    form {width: 60%; max-width: 40em; display: grid; grid-gap: 1em; grid-template-rows: auto;
+        grid-template-columns: 9em 1fr; }
+    input[type="submit"] { grid-column: 2 / 2; width: 9em;}
+}
+
+@media screen and (min-width: 1024px) {
+    header {font-size: 120%}
+    nav {font-weight: bold;}
+    .home {height: 50vh; padding-top: 5em; padding-left: 8em;}
+    .content {height: 30vh; padding-top: 2em; padding-left: 8em;}
+    #wrapper {margin: auto; width: 80%; }
+
+}
+
